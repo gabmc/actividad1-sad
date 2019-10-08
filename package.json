@@ -1,0 +1,14 @@
+{
+  "name": "actividad-1",
+  "version": "1.0.0",
+  "description": "actividad 1",
+  "main": "actividad-1.js",
+  "scripts": {
+    "test": "node actividad-1.js"
+  },
+  "author": "gary",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.3.2"
+  }
+}
