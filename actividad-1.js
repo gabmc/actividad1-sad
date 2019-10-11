@@ -1,4 +1,5 @@
-var modulo1 = require("./modulo-1.js");
+var cartFunctions = require("./CartFunctions.js");
+var modulo2 = require("./dbConnection.js");
 
 function Item(id, name, price) {
     this.id = id;
@@ -8,10 +9,10 @@ function Item(id, name, price) {
 
 var cart = [];
 
-// var item1 = new Item(2,"Chips Ahoy!",2);
-var item1 = new Item(1, "Oreo", 2);
-modulo1.addToCart(item1, cart);
-console.log(cart);
+var item1 = new Item(2, "Naranjas", 2);
+//var item1 = new Item(1, "Oreo", 2);
+cartFunctions.addToCart(item1, cart);
+setTimeout(() => {console.log(cart)}, 1000);
 // modulo1.removeFromCart(1, cart);
 // console.log(cart);
 
